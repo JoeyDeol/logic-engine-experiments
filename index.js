@@ -1,1 +1,1 @@
-const test = new Core('EventsPlugin');
+const test = new Core([Search, Sayt]);
