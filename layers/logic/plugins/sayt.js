@@ -3,6 +3,9 @@ const Sayt = (() => {
     constructor() {
       this.name = 'sayt';
       this.type = 'data-source';
+      this.wantedEvents = {
+        fetchSaytProducts: this.fetch,
+      };
       console.log('Sayt plugin has been instantiated');
     }
 
