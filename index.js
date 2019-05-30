@@ -1,1 +1,4 @@
-const test = new Core([Search, Sayt]);
+const core = new Core([Search, Sayt]);
+
+core.fetchData("search");
+core.fetchData("sayt");
