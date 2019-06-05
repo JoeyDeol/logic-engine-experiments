@@ -10,7 +10,7 @@ class ComponentA extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log('COMPONENT-A HAS BEEN MOUNTED!');
+
   }
 }
 

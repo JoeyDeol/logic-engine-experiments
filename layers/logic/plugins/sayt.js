@@ -6,7 +6,6 @@ const Sayt = (() => {
       this.wantedEvents = {
         fetchSaytProducts: this.fetch,
       };
-      console.log('Sayt plugin has been instantiated');
     }
 
     fetch() {

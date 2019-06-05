@@ -6,7 +6,6 @@ const Search = (() => {
       this.wantedEvents = {
         fetchProducts: this.fetch,
       };
-      console.log('Search plugin has been instantiated');
     }
 
     fetch() {
