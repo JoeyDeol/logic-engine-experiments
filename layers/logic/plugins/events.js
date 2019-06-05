@@ -47,13 +47,15 @@ const Events = (() => {
         default:
             console.log('This is an unknown event!');
       }
+
+      this.emitUpdate(event);
     }
 
     /* 
       The purpose of the emitUpdate method is to signal to the greater application that that events plugin has now concluded processing a given event. This is meant to act as a signal for when any given event has reached the end of its journey through the events plugin.
     */
-    emitUpdate() {
-      // Use this to send data back out after process() has fired in response to an event to indicate the application has processed the wantedEvents.
+    emitUpdate(event) {
+      window.dispatchEvent(new Event(`${event.type}_UPDATED`));
     }
   }
   
