@@ -69,7 +69,10 @@ const Events = (() => {
     */
     emitUpdate(event, eventData) {
       console.log(`A ${event.type}_UPDATED event has been dispatched!`, eventData);
-      window.dispatchEvent(new CustomEvent(`${event.type}_UPDATED`, { detail: { eventData: eventData } } ));
+      document.dispatchEvent(new CustomEvent(`${event.type}_UPDATED`, {
+        bubbles: true,
+        detail: { ...eventData },
+      }));
     }
   }
   
