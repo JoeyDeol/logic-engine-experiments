@@ -49,18 +49,6 @@ const Events = (() => {
         processed: true,
       }
 
-      // TODO Remove switch case, because this method should act in a consistent way no matter what event is emitted.
-      // switch (event.type) {
-      //   case 'fetchProducts':
-      //       console.log('A FETCH PRODUCTS EVENT HAS BEEN PROCESSED!');
-      //       break;
-      //   case 'fetchSaytProducts':
-      //     console.log('A FETCH SAYT PRODUCTS EVENT HAS BEEN PROCESSED!');
-      //     break;
-      //   default:
-      //       console.log('This is an unknown event!');
-      // }
-
       this.emitUpdate(event, callbackData);
     }
 
