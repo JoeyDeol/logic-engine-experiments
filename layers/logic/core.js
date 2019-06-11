@@ -15,8 +15,4 @@ class Core {
   fetchData(dataType) {
     this.plugins.filter((plugin) => plugin.name === dataType)[0].fetch();
   }
-
-  collectEvent(event) {
-    this.plugins.filter((plugin) => plugin.name === 'events')[0].collect(event);
-  }
 }
